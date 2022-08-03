@@ -18,7 +18,6 @@ export class UserComponent implements OnInit {
 
     this.route.params.subscribe((params) =>{
       this.user.id = +params['id'];
-      console.log('this.user.id: ', typeof this.user.id);
       this.user.name = params['name'];
     });
   }
