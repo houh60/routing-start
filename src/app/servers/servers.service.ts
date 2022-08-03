@@ -31,8 +31,7 @@ export class ServersService {
   }
 
   updateServer(id: number, serverInfo: {name: string, status: string}) {
-    const server = this.servers.find(
-      (s) => {
+    const server = this.servers.find((s) => {
         return s.id === id;
       }
     );
